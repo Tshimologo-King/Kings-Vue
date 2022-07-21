@@ -5,7 +5,7 @@
       <div class="row">
         <div class="testimonials">
           <div class="card">
-            Jason Wandrag
+            Mr Wandrag
             <img src="https://picsum.photos/200/300?random=98" alt="" />
             <p class="TestimonialText">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -27,7 +27,7 @@
           </div>
           <div class="card">
             Ms Mntungwa
-            <img src="https://picsum.photos/200/300?random=21" alt="" />
+            <img src="https://picsum.photos/200/300?random=20" alt="" />
             <p class="TestimonialText">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
@@ -35,6 +35,13 @@
           <div class="card">
             Mr G
             <img src="https://picsum.photos/200/300?random=23" alt="" />
+            <p class="TestimonialText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="card">
+            Mr Goliath
+            <img src="https://picsum.photos/200/300?random=24" alt="" />
             <p class="TestimonialText">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
@@ -73,7 +80,7 @@
 .container {
   margin-inline: auto;
   position: absolute;
-  top: 50%;
+  top: 49.5%;
   left: 7%;
 }
 
@@ -132,7 +139,7 @@
 }
 .navigationLinks{
   position: absolute;
-  top: 100%;
+  top: 98%;
   width: 100%;
   display: flex;
   justify-content: space-between;
