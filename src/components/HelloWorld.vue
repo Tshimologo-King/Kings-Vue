@@ -43,12 +43,15 @@ export default {};
 }
 
 #landing {
-  background-image: url(../assets/blank.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: black;
   height: 100vh;
   width: 100%;
-  margin-inline: auto;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .three_kings {
@@ -74,38 +77,41 @@ export default {};
   width: auto;
   height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   transform: scale(1.2) translate(1rem, 0) skew(-8deg, -4deg);
-  border-radius: 32px;
-  background: #616161;
-  box-shadow: 29px 29px 58px #2c2c2c, -29px -29px 58px #969696;
+  margin-right: 10px;
 }
+.aboutCard {
+  box-shadow: 29px 29px 58px #101ad6, -29px -29px 58px #3598ca;
+}
+.projectCard{
+  box-shadow: 29px 29px 58px #cef700, -29px -29px 58px #dcca71;
+}
+.testimonialCard{
+  box-shadow: 29px 29px 58px #b93939, -29px -29px 58px #ff0000;
+}
+.contactCard{
+box-shadow: 29px 29px 58px #0c9111, -29px -29px 58px #5dff52;}
 
 .aboutCard img:hover {
-  border: 1px solid yellow;
   padding: 5px;
   height: 100%;
-  transform: scale(1.1);
   z-index: 100;
 }
 .projectCard img:hover {
-  border: 1px solid yellow;
   padding: 5px;
   height: 100%;
   transform: scale(1.1);
   z-index: 100;
 }
 .testimonialCard img:hover {
-  border: 1px solid yellow;
   padding: 5px;
   height: 100%;
   transform: scale(1.1);
   z-index: 100;
 }
 .contactCard img:hover {
-  border: 1px solid yellow;
   padding: 5px;
   height: 100%;
   transform: scale(1.1);

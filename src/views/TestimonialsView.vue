@@ -15,7 +15,7 @@
             Ms Moritz
             <img src="https://picsum.photos/200/300?random=12" alt="" />
             <p class="TestimonialText">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
           <div class="card">
@@ -47,20 +47,27 @@
             </p>
           </div>
         </div>
+        <marquee behavior="scroll" direction="left" style="margin-top: 1rem;">
+          <img src="https://picsum.photos/200/300?random=98" alt="Mr Wandrag" width="100" height="100">
+          <img src="https://picsum.photos/200/300?random=8" alt="Mr Wandrag" width="100" height="100">
+          <img src="https://picsum.photos/200/300?random=9" alt="Mr Wandrag" width="100" height="100">
+          <img src="https://picsum.photos/200/300?random=1" alt="Mr Wandrag" width="100" height="100">
+          <img src="https://picsum.photos/200/300?random=14" alt="Mr Wandrag" width="100" height="100">
+        </marquee>
       </div>
     </div>
     <div class="navigationLinks">
-        <div class="pageLinkPrev">
-          <router-link to="/projects">
-            <button>Projects</button>
-          </router-link>
-        </div>
-        <div class="pageLinkNext">
-          <router-link to="/contact">
-            <button>Contact</button>
-          </router-link>
-        </div>
+      <div class="pageLinkPrev">
+        <router-link to="/projects">
+          <button>Projects</button>
+        </router-link>
       </div>
+      <div class="pageLinkNext">
+        <router-link to="/contact">
+          <button>Contact</button>
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -81,7 +88,7 @@
   margin-inline: auto;
   position: absolute;
   top: 49.5%;
-  left: 7%;
+  left: 4.5%;
 }
 
 .testimonials {
@@ -90,7 +97,6 @@
   padding: 10px;
   border-radius: 10px;
   border: 1px solid white;
-  margin-top: 100px;
   box-shadow: 5px 5px 5px grey;
   display: flex;
   justify-content: space-evenly;
@@ -107,6 +113,7 @@
   flex-grow: 1;
   transition: all 0.3s linear;
   flex-basis: 0;
+  display: flex;
 }
 
 .card img {
@@ -115,10 +122,16 @@
   transition: 1.5s ease-in-out;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  border: 5px solid #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  aspect-ratio: 1;
 }
 
 .TestimonialText {
+  display: none;
+}
+
+marquee{
   display: none;
 }
 
@@ -128,6 +141,7 @@
 }
 .card:hover .TestimonialText {
   display: block;
+  flex-wrap: wrap;
 }
 
 .card_one {
@@ -137,7 +151,7 @@
 .card_five {
   border-radius: 0 15px 15px 0;
 }
-.navigationLinks{
+.navigationLinks {
   position: absolute;
   top: 98%;
   width: 100%;
@@ -146,13 +160,36 @@
   margin-top: 2rem;
   padding: 10px;
 }
-.pageLinkPrev button{
+.pageLinkPrev button {
   padding: 5px 10px;
   border-radius: 25px;
 }
-.pageLinkNext button{
+.pageLinkNext button {
   padding: 5px 10px;
   border-radius: 25px;
 }
 
+/* media queries */
+@media screen and (max-width: 800px) {
+  .testimonials {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .container {
+    margin-inline: auto;
+    position: inherit;
+  }
+  .card {
+    max-height: 100px;
+    text-align: center;
+    transition: all linear;
+  }
+  .card img {
+    display: none;
+  }
+  marquee{
+    display: block;
+    margin-bottom: 5px;
+  }
+}
 </style>

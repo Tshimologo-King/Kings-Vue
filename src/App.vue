@@ -6,9 +6,18 @@
     <router-link to="/testimonials">Testimonials</router-link> |
     <router-link to="/contact">Contacts</router-link> |
   </nav>
-  <router-view/>
+  <router-view />
+  <footerVue />
 </template>
 
+<script>
+import footer from "./components/footer.vue";
+import footerVue from "./components/footer.vue";
+
+export default {
+  components: { footerVue },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
