@@ -107,6 +107,21 @@ h1 {
   text-shadow: -1px -1px 0 rgb(255, 2, 2), 1px -1px 0 rgb(255, 0, 93), -1px 1px 0 rgb(255, 149, 149), 1px 1px 0 rgb(114, 0, 0);
   font-size: 5rem;
   margin-inline: auto;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 .card {

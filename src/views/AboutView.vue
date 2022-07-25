@@ -178,8 +178,8 @@ h1 {
   color: black;
   text-shadow: -1px -1px 0 rgb(19, 2, 255), 1px -1px 0 rgb(67, 79, 255), -1px 1px 0 rgb(10, 0, 144), 1px 1px 0 rgb(64, 159, 242);
   font-size: 8rem;
-  display: flex;
-  margin-inline: 100px;
+  margin-inline: auto;
+  animation: float 6s ease-in-out infinite;
 }
 
 .aboutContent {
@@ -627,5 +627,19 @@ h2 {
       0 0 70px rgb(0, 26, 255),
       0 0 80px rgb(12, 66, 95);
   }
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 </style>

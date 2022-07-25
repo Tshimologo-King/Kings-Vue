@@ -17,7 +17,7 @@
             <div class="card">
               <div class="content">
                 <div class="front"><p>Project 2: Cultural Cuisine (Group)</p></div>
-                <div class="back"><p>"https://github.com/AbuBakrKhan24/Project_1.git"</p>
+                <div class="back">
                 <p>"https://comfy-axolotl-4c4a89.netlify.app"</p></div>
               </div>
             </div>
@@ -33,13 +33,19 @@
                 <div class="front">
                   <p>Project 4: Mental Health Blog Site (Group)</p>
                 </div>
-                <div class="back"><p></p>
+                <div class="back"><p>https://github.com/siyolisemekuto/group_app.git</p>
                 <p></p></div>
               </div>
             </div>
             <div class="card">
               <div class="content">
-                <div class="front"><p>Project 5: Project WYZE</p></div>
+                <div class="front"><p>Project 5: UX Calculator</p></div>
+                <div class="back"><p>http://127.0.0.1:5501/</p></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="front"><p>Project 6: Project WYZE</p></div>
                 <div class="back"><p>Coming Soon...</p></div>
               </div>
             </div>
@@ -68,6 +74,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
 
 #Projects {
   height: 100vh;
@@ -78,8 +98,8 @@ h1 {
   color: black;
   text-shadow: -1px -1px 0 rgb(238, 238, 39), 1px -1px 0 rgb(139, 126, 45), -1px 1px 0 rgb(229, 229, 131), 1px 1px 0 rgb(188, 155, 11);
   font-size: 5rem;
-  display: flex;
   margin-inline: auto;
+  animation: float 6s ease-in-out infinite;
 }
 
 h2{
@@ -101,7 +121,7 @@ h2{
   border-radius: 32px;
   background: #333333;
   box-shadow: 29px 29px 58px #faff5a, -29px -29px 58px #ddff00;
-  margin-top: 10rem;
+  margin-top: 6rem;
   margin-inline: auto;
 }
 

@@ -48,11 +48,28 @@ export default {};
   width: 100%;
 }
 h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  font-family: monospace;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 0 rgb(255, 0, 0), 1px -1px 0 rgb(13, 0, 255), -1px 1px 0 rgb(0, 255, 8), 1px 1px 0 rgb(234, 255, 0);
+  font-size: 5rem;
+  margin-inline: auto;
+  animation: float 6s ease-in-out infinite;
 }
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 
 .three_kings {
   color: black;

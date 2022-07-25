@@ -46,11 +46,30 @@
     height: 100vh;
     width: 100%;
 }
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 h1 {
   color: black;
   text-shadow: -1px -1px 0 rgb(127, 163, 0), 1px -1px 0 rgba(105, 147, 55, 0.505), -1px 1px 0 rgb(17, 255, 0), 1px 1px 0 rgba(69, 223, 102, 0.286);
   font-size: 5rem;
-  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 6s ease-in-out infinite;
 }
 
 .contactMeDetails{
