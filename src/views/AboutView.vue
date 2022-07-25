@@ -177,7 +177,7 @@ export default {
 h1 {
   color: black;
   text-shadow: -1px -1px 0 rgb(19, 2, 255), 1px -1px 0 rgb(67, 79, 255), -1px 1px 0 rgb(10, 0, 144), 1px 1px 0 rgb(64, 159, 242);
-  font-size: 5rem;
+  font-size: 8rem;
   display: flex;
   margin-inline: 100px;
 }
@@ -192,7 +192,7 @@ h1 {
   float: right;
   padding: 30px;
   margin-inline: 110px;
-  margin-top: 10rem;
+  margin-top: 6rem;
   height: 50vh;
   border-radius: 10px;
   border-radius: 32px;

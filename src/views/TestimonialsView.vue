@@ -1,6 +1,6 @@
 <template>
   <div id="Testimonial">
-    <h2>Testimonials</h2>
+    <h1>Testimonials</h1>
     <div class="container">
       <div class="row">
         <div class="testimonials">
@@ -53,6 +53,7 @@
           <img src="https://picsum.photos/200/300?random=9" alt="Mr Wandrag" width="100" height="100">
           <img src="https://picsum.photos/200/300?random=1" alt="Mr Wandrag" width="100" height="100">
           <img src="https://picsum.photos/200/300?random=14" alt="Mr Wandrag" width="100" height="100">
+          <img src="https://picsum.photos/200/300?random=12" alt="Mr Wandrag" width="100" height="100">
         </marquee>
       </div>
     </div>
@@ -96,10 +97,16 @@
   height: 100%;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid white;
-  box-shadow: 5px 5px 5px grey;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 29px 29px 58px #b81c1ca2, -29px -29px 58px #ff0303a8;
   display: flex;
   justify-content: space-evenly;
+}
+h1 {
+  color: black;
+  text-shadow: -1px -1px 0 rgb(255, 2, 2), 1px -1px 0 rgb(255, 0, 93), -1px 1px 0 rgb(255, 149, 149), 1px 1px 0 rgb(114, 0, 0);
+  font-size: 5rem;
+  margin-inline: auto;
 }
 
 .card {
@@ -107,8 +114,8 @@
   margin: 10px;
   padding: 10px;
   background-color: transparent;
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
+  border-bottom: 1px solid rgb(255, 115, 115);
+  border-left: 1px solid rgb(122, 0, 0);
   text-align: left;
   flex-grow: 1;
   transition: all 0.3s linear;

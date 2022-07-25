@@ -1,22 +1,22 @@
 <template>
     <div id="ContactMe">
-        <h2 style="margin-bottom: 2rem; margin-top">Contact Me</h2>
+        <h1 style="margin-bottom: 2rem; margin-top">Contact Me</h1>
         <div class="contactMeDetails">
             <form action="https://formspree.io/f/xoqrkjrq" method="post">
                 <div class="col-lg-12 mt-4 mb-3">
-                    <input type="text" style="width: 50%; height: 50px" placeholder="Full Name" name="name" required>
+                    <input type="text" style="width: 50%; height: 50px; border-radius: 15px; padding: 10px" placeholder="Full Name" name="name" required>
                 </div>
                 <div class="col mt-4">
-                    <input type="text" style="width: 50%; height: 50px" placeholder="name@gmail.com" name="name" required>
+                    <input type="text" style="width: 50%; height: 50px; border-radius: 15px; padding: 10px" placeholder="name@gmail.com" name="name" required>
                 </div>
                 <div class="mb-3 mt-4">
-                    <input type="text" style="width: 50%; height: 50px;" placeholder="Subject" name="name" required>
+                    <input type="text" style="width: 50%; height: 50px; border-radius: 15px; padding: 10px" placeholder="Subject" name="name" required>
                 </div>
                 <div class="form-group col-lg-12 md-12 mt-4">
-                    <textarea id="enquires" style="height: 10vh; width: 50%; margin-bottom:2rem;" placeholder="Enquiries..."></textarea>
+                    <textarea id="enquires" style="height: 10vh; width: 50%; margin-bottom:2rem;border-radius: 15px; padding: 10px" placeholder="Enquiries..."></textarea>
                 </div>
                 <div class="button text-center">
-                    <button type="submit" style="height: 5vh; width:25%; border-radius: 25px">submit</button>
+                    <button type="submit" style="height: 6vh; width:20%; border-radius: 25px; padding: 10px">submit</button>
                 </div>
             </form>
         </div>
@@ -46,6 +46,22 @@
     height: 100vh;
     width: 100%;
 }
+h1 {
+  color: black;
+  text-shadow: -1px -1px 0 rgb(127, 163, 0), 1px -1px 0 rgba(105, 147, 55, 0.505), -1px 1px 0 rgb(17, 255, 0), 1px 1px 0 rgba(69, 223, 102, 0.286);
+  font-size: 5rem;
+  margin-inline: auto;
+}
+
+.contactMeDetails{
+   width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-inline: auto;
+  box-shadow: 29px 29px 58px #44ff00a2, -29px -29px 58px #31ff0397;
+}
+
 
 .navigationLinks{
   position: absolute;
